@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    color: #222;
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+section span {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#heading_logo {
+    width: 50px;
+    background-color: white;
+}
+
+
+/* Just some fancy header, footer */
+#main-header-container,
+.footer-wrapper {
+    background-color: #473d47;
+    padding: 20px;
+    color: rgba(255,255,255, 0.5);
+}
+
+/* Basic Side-by-side Sidebar, Content layout w/ display: table-cell */
+#main-container {
+    display: table-cell;
+    width: 100%;
+    height: 100%;
+}
+
+#sidebar {
+    display: table-cell;
+    width: 15%;
+    background-color: #343638;
+}
+
+#sidebar a {
+    display: block;
+    padding: 10px;
+    color: rgba(255,255,255, 0.5);
+    margin: 15px 0 0 0;
+    text-decoration: none;
+}
+
+#sidebar a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+}
+
+#content {
+    display: table-cell;
+    width: 85%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/* Right-Left Footer layout */
+.footer-wrapper span {
+    float: right;
+}
+
+.footer-wrapper a {
+    color: rgba(255,255,255, 0.5);
+}
+
+.footer-wrapper a:hover {
+    color: white;
+}
+
+/* CSS flex-box layout is a CSS3 web layout model. */
+.flex-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center; /* horizontal centering */
+    align-items: center;
+}
+
+.flex-item {
+    padding: 0 10px 0 10px;
+}
+
+/* Table screen */
+
+@media only screen and (max-width: 900px) {
+    #main-header-container, #main-container, #sidebar, #content  {
+        display: block;
+        width: 100%;
+    }
+
+    #sidebar a {
+        margin: 0;
+    }
+
+    #content {
+        padding: 0;
+    }
+}
+
+/* Responsive mobile screen */
+@media only screen and (max-width: 600px) {
+    #main-header-container, #main-container, #sidebar, #content  {
+        display: block;
+        width: 100%;
+    }
+
+    #sidebar a {
+        margin: 0;
+    }
+
+    iframe {
+        width: 140px;
+        height: 78.75px;
+    }
+}
