@@ -9,6 +9,7 @@
     <title>Major Assignment 1</title>
     <link rel="icon" type="image/png" href="img/rowan-torch.png">
     <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <link rel="stylesheet" type="text/css" href="css/ordered.css" />
 </head>
 <body>
     <header id="main-header-container" class="flex-wrapper horizontal-centering">
@@ -22,6 +23,11 @@
     </header>
 
     <main id="main-container">
+
+        <div class="main-header">
+            <div id="background-content-header"></div>
+        </div>
+
         <div id="sidebar">
             <a href="#tools">Tools the I used to create the game</a>
             <a href="#target">Target Demographics</a>
@@ -37,15 +43,15 @@
 
             <section id="tools" class="primary">
                 <h3>Tools the I used to create the game</h3>
-                <p><span><a href="https://www.unrealengine.com/en-US/what-is-unreal-engine-4" target="_blank">Unreal Engine 4</a></span>
+                <p><span><a id="unrealengine" href="https://www.unrealengine.com/en-US/what-is-unreal-engine-4" target="_blank">Unreal Engine 4</a></span>
                     is a set of integrated tools designing and building games, simulations and visualizations for game developers. For the game, I used the Paper 2D Tile Sets and Tile Maps. But this software is not limited to that, developers can also create 3D games.
                 </p>
 
-                <p><span><a href="https://www.gimp.org/" target="_blank">GIMP</a></span>
+                <p><span><a id="gimp" href="https://www.gimp.org/" target="_blank">GIMP</a></span>
                     is a cross-platform image editor available for GNU/Linux, OS X, Windows and more operating systems. It is free software, you can change its source code and distribute your changes. I used this software to create all the characters before I uploaded them to Unreal Engine 4 to create the game. It is best practice to set the file in the correct format before starting creating the characters. For my game, it is necessary to have standard tile with the width 64px and tile height 64 px. If I want a bigger character I can multiple the number with this size. For example, if I want a character with a double height compared to my normal character so it would be the width 64px and tile height 128px. The image should be in PNG and the resolution would be 150ppi and transparent background.
                 </p>
                 <p>
-                    Not to mention, there is a tool that is life saver for me when I design my character which is <span><a href="https://color.adobe.com/create/color-wheel/" target="_blank">Adobe color themes</a></span>. It helps me choosing harmonious and appealing color combination for my design game.
+                    Not to mention, there is a tool that is life saver for me when I design my character which is <span><a id="adobe" href="https://color.adobe.com/create/color-wheel/" target="_blank">Adobe color themes</a></span>. It helps me choosing harmonious and appealing color combination for my design game.
                 </p>
             </section>
 
@@ -62,20 +68,49 @@
 
             <section id="genre" class="primary">
                 <h3>Genre</h3>
-                <p>Male and Female or both.</p>
+                <ul>
+                    <li>Male</li>
+                    <li>Female</li>
+                    <li>Both above</li>
+                </ul>
             </section>
 
             <section id="levels" class="primary">
                 <h3>Levels</h3>
-                <p>
-                    There are three main levels in this game. Each level has one main evil that the main character needed to defeat. Each evil has its especial damage ability.
-                First level, this is where the main character gets out of his home and start to find the gifts with a cold dark night. Here Peter must climb up the mountain on the dirty rock and dirty dust road. At this level, Peter must face with the rock evil who uses rock to damage the main character. </p>
-                <p>
-                    Second level is where Perter goes through a forest on his way to the mountain. Here he must go through a tunnel and faces the fire evil which uses fire to damage and kill Peter.
-                </p>
-                <p>
-                    The third one is where he meets a winter storm and there are snow everywhere. Here Peter is finally got to the mountain and faces his last fight with the snow evil. Once he defeats the evil and can collect the gifts and saves Christmas of all Children in the world. Cheer for Peter!
-                </p>
+                <p>There are three main levels in this game. Each level has one main evil that the main character needed to defeat. Each evil has its especial damage ability.</p>
+                <ol>
+                    <li><span>Rock</span></li>
+                    <li><span>Fire</span></li>
+                    <li><span>Snow</span></li>
+                </ol>
+
+
+                        First level, this is where the main character gets out of his home and start to find the gifts with a cold dark night. Here Peter must climb up the mountain on the dirty rock and dirty dust road. At this level, Peter must face with the rock evil who uses rock to damage the main character.
+
+                        Second level is where Perter goes through a forest on his way to the mountain. Here he must go through a tunnel and faces the fire evil which uses fire to damage and kill Peter.
+
+                        The third one is where he meets a winter storm and there are snow everywhere. Here Peter is finally got to the mountain and faces his last fight with the snow evil. Once he defeats the evil and can collect the gifts and saves Christmas of all Children in the world. Cheer for Peter!
+
+            </section>
+
+
+
+            <section id="characters" class="primary">
+                <h3>Characters</h3>
+                <div>
+                    <h4>The main character -- Peter</h4>
+                    <p>Sprite sheet (Idle, Run Cycle, Jump and Fall)</p>
+                    <img id="main_character" src="img/XuanDo_GAD4.png" alt="Peter The main character">
+                </div>
+
+                <div id="evils">
+                    <h4>The main evils</h4>
+                    <p>Sprite sheet (Rock, fire, snow evil)</p>
+                    <img id="rock" src="img/XuanDo_GAD6_Damages1.png" alt="Rock evil">
+                    <img id="fire" src="img/XuanDo_GAD6_Damages2.png" alt="Fire evil">
+                    <img id="snow" src="img/XuanDo_GAD6_Damages3.png" alt="Snow veil">
+                </div>
+
             </section>
 
             <section id="videos" class="primary">
