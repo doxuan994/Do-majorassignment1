@@ -55,6 +55,12 @@ a {
     text-align: center;
 }
 
+/* Responsive Image */
+#main_character {
+    max-width: 100%;
+    height: auto;
+}
+
 #rock {
     background-color: #452E24;
 }
