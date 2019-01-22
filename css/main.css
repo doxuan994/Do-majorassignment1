@@ -32,8 +32,8 @@ a {
 
 #background-content-header {
     width: 100%;
-    height: 720px;
-    background-image: url('/img/XuanDo_GAD6_MainMenu.png');
+    height: 900px;
+    background-image: url('/img/background-content-header.png');
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -140,14 +140,22 @@ a {
     padding: 0 10px 0 10px;
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1600px) {
     #background-content-header {
-        background-size: contain;
+        background-size: 100% 100%;
     }
 }
 
+/* Responsive smaller screen */
+@media only screen and (max-width: 900px) {
+    #background-content-header {
+        width: 100%;
+        height: 505px;
+        background-image: url('/img/background-content-header-table.png');
+    }
+}
 
-/* Responsive mobile screen */
+/* Responsive table screen */
 @media only screen and (max-width: 600px) {
     #main-header-container, #main-container, #sidebar, #content  {
         display: block;
@@ -161,8 +169,18 @@ a {
     iframe {
         width: 300px;
         height: 168.75px;
-
     }
 
+    #background-content-header {
+        width: 100%;
+        height: 337px;
+        background-image: url('/img/background-content-header-table.png');
+    }
+}
 
+/* Responsive mobile screen */
+#background-content-header {
+    width: 100%;
+    height: 225px;
+    background-image: url('/img/background-content-header-mobile.png');
 }
