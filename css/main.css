@@ -21,6 +21,10 @@ a {
     text-decoration: none;
 }
 
+q {
+    font-style: italic;
+}
+
 #tools span {
     font-size: 24px;
     font-weight: bold;
@@ -37,6 +41,10 @@ a {
     /* Remove white space below image */
     vertical-align: bottom;
 }
+
+
+
+
 
 /* #background-content-header {
 width: 100%;
@@ -165,8 +173,6 @@ background-size: cover;
     margin-right: -20px;
 }
 
-
-
 /* Just some fancy header, footer */
 #main-header-container,
 .footer-wrapper {
@@ -241,7 +247,15 @@ background-size: cover;
 }
 
 .flex-item {
-    padding: 0 10px 0 10px;
+    margin: 0 10px 0 10px;
+}
+
+/* Section */
+.gimp-box {
+    max-width: 460px;
+    background-color: lightgray;
+    padding: 30px 50px;
+    margin: 0 80px;
 }
 
 /* Responsive smaller screen */
@@ -274,6 +288,10 @@ background-image: url('/img/background-content-header-table.png');
     height: 337px;
     background-image: url('/img/background-content-header-table.png');
     } */
+
+    .flex-item {
+        margin: 0;
+    }
 }
 
 /* Responsive mobile screen */
