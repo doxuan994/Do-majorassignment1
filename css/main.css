@@ -25,10 +25,7 @@ q {
     font-style: italic;
 }
 
-#tools span {
-    font-size: 24px;
-    font-weight: bold;
-}
+
 
 #heading_logo {
     width: 50px;
@@ -56,8 +53,10 @@ background-attachment: fixed;
 background-size: cover;
 } */
 
-#unrealengine {
+.unrealengine {
     color: black;
+    font-size: 24px;
+    font-weight: bold;
 }
 
 #gimp {
@@ -254,8 +253,12 @@ background-size: cover;
 .gimp-box {
     max-width: 460px;
     background-color: lightgray;
-    padding: 30px 50px;
+    padding: 30px 40px;
     margin: 0 80px;
+}
+
+.gimp-box:nth-child(2) {
+    text-align: center;
 }
 
 /* Responsive smaller screen */
