@@ -255,7 +255,7 @@ background-image: url('/img/background-content-header-table.png');
 
 /* Responsive table screen */
 @media only screen and (max-width: 600px) {
-    #main-header-container, #main-container, #sidebar, #content  {
+    #main-container, #sidebar, #content  {
         display: block;
         width: 100%;
     }
