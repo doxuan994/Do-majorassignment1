@@ -291,6 +291,7 @@ background-image: url('/img/background-content-header-table.png');
 
     .flex-item {
         margin: 0;
+        padding: 20px 36px;
     }
 }
 
