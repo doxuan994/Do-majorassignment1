@@ -53,13 +53,16 @@ background-attachment: fixed;
 background-size: cover;
 } */
 
-.unrealengine {
-    color: black;
+.unrealengine, .gimp {
     font-size: 24px;
     font-weight: bold;
 }
 
-#gimp {
+.unrealengine {
+    color: black;
+}
+
+.gimp {
     color: darkslategray;
 }
 
